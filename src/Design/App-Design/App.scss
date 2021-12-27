@@ -1,0 +1,33 @@
+@mixin flex-center($x-axis, $y-axis) {
+  display: flex;
+  flex-direction: column;
+  justify-content: $x-axis;
+  align-items: $y-axis;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'poppins', sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  @include flex-center(flex-start, center);
+}
+
+.contact-header {
+  margin-top: 20px;
+  font-size: 21px;
+}
+.add-contact-title {
+  font-size: 18px;
+  font-weight: 600px;
+}
