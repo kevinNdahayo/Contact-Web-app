@@ -4,11 +4,15 @@ import Header from './Components/Header'
 // import ContactList from './Components/ContactList'
 // import ContactCard from './Components/ContactCard'
 import AddContact from './Components/AddContact'
+import ContactList from './Components/ContactList'
+import ContactCard from './Components/ContactCard'
 function App() {
   return (
     <div className="container">
       <Header />
-      <AddContact />
+      {/* <AddContact />  */}
+      {/* <ContactList /> */}
+      <ContactCard />
     </div>
   )
 }

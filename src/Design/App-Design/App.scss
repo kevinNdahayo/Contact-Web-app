@@ -23,11 +23,241 @@ body {
   @include flex-center(flex-start, center);
 }
 
+// contact header
 .contact-header {
+  span {
+    font-family: 'poppins', sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+    margin-top: 21px;
+  }
+}
+
+// Add contact
+.add-contact {
   margin-top: 20px;
-  font-size: 21px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  .add-contact-title,
+  label {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .input-field {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    input {
+      border-radius: 10px;
+      outline: none;
+      border: 2px solid #0269c7;
+      height: 45px;
+      width: 216px;
+      padding-left: 15px;
+    }
+    input::placeholder {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    input[type='text'] {
+      font-size: 16px;
+      font-weight: 600;
+    }
+    input[type='email'] {
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .add-button {
+      input {
+        background-color: #0269c7;
+        color: #fff;
+        height: 40px;
+        width: 124px;
+        font-size: 14px;
+        font-weight: bolder;
+        padding: 6px 36px;
+      }
+    }
+  }
 }
-.add-contact-title {
-  font-size: 18px;
-  font-weight: 600px;
+
+.list-of-contacts {
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+  .contact-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      .contact-name {
+        font-size: 16px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .contact-action {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+  }
 }
+
+// Contact List
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+  margin-top: 21px;
+  padding: 27px 45px;
+  // contact list header
+  .contact-list-header {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    width: 476px;
+    justify-content: space-between;
+    align-items: center;
+    .contact-list-header-title > span {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .contact-list-header-button > span {
+      height: 40px;
+      width: 124px;
+      background-color: #0269c7;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      place-content: center center;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: 550;
+    }
+    .contact-list-header-button > span:hover {
+      box-shadow: 2px 2px 2px rgb(141, 140, 140);
+      transition: 0.2s ease;
+    }
+  }
+
+  // contact-list-search
+  .contact-list-search {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 425px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #0269c7;
+    border-radius: 10px;
+    position: relative;
+  }
+  .contact-list-search > input {
+    height: 45px;
+    width: 300px;
+    border: none;
+    outline: none;
+  }
+  .contact-list-search > input::placeholder {
+    font-size: 18px;
+    font-weight: 400;
+    position: absolute;
+    top: 50%;
+    left: 0.5%;
+    transform: translate(-0.5%, -50%);
+  }
+  .contact-list-search > input[type='text'] {
+    font-size: 18px;
+    font-weight: normal;
+  }
+  .search-svg {
+    margin-top: 0.5em;
+    position: absolute;
+    top: 20%;
+    right: 2%;
+    transform: translate(-2%, -20%);
+  }
+  // contact list users
+  .contact-list-users {
+    display: flex;
+    flex-direction: row;
+    height: 57px;
+    width: 512px;
+    justify-content: space-between;
+    .user-contact-details {
+      display: flex;
+      flex-direction: row;
+      gap: 6px;
+    }
+    .user-contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      .user-contact-name {
+        font-size: 16px;
+        font-weight: bold;
+      }
+    }
+
+    // contact action
+    .contact-action {
+      display: flex;
+      flex-direction: row;
+      gap: 8px;
+    }
+  }
+}
+
+// contact card
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  height: 398px;
+  width: 584px;
+  flex-wrap: wrap;
+  place-content: center center;
+  gap: 15px;
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    .contact-full-names {
+      font-size: 21px;
+      font-weight: bold;
+    }
+    .contact-email {
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+  .back-to-contact-button {
+    height: 40px;
+    width: 182px;
+    background-color: #;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    span {
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+}
+
+// Mobile view
