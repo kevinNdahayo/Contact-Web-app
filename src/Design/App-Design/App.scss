@@ -95,7 +95,8 @@ body {
 }
 .list-of-contacts {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 200px;
   justify-content: space-between;
   .contact-details {
     display: flex;
@@ -250,7 +251,7 @@ body {
   .back-to-contact-button {
     height: 40px;
     width: 182px;
-    background-color: #;
+    background-color: #0269c7;
     color: #fff;
     display: flex;
     flex-direction: row;

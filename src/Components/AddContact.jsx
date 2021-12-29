@@ -7,28 +7,26 @@ function AddContact(props) {
   // Render function to hold data from props
   const renderContactList = props.contacts.map((contact) => {
     return (
-      <>
-        <div className="list-of-contacts">
-          <div className="contact-details">
-            <div className="contact-img">
-              <ContactUser />
-            </div>
-            <div className="contact-info">
-              <span className="contact-name">{contact.name}</span>
-              <span className="contact-gmail">{contact.email}</span>
-            </div>
+      <div className="list-of-contacts">
+        <div className="contact-details">
+          <div className="contact-img">
+            <ContactUser />
           </div>
-
-          <div className="contact-action">
-            <div className="contact-update">
-              <UpdateUser />
-            </div>
-            <div className="contact-delete">
-              <DeleteUser />
-            </div>
+          <div className="contact-info">
+            <span className="contact-name">{contact.name}</span>
+            <span className="contact-gmail">{contact.email}</span>
           </div>
         </div>
-      </>
+
+        <div className="contact-action">
+          <div className="contact-update">
+            <UpdateUser />
+          </div>
+          <div className="contact-delete">
+            <DeleteUser />
+          </div>
+        </div>
+      </div>
     )
   })
   return (

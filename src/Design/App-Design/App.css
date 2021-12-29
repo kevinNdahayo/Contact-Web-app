@@ -2,7 +2,7 @@
   margin: 0px;
   padding: 0px;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -19,14 +19,14 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contact-header span {
@@ -44,8 +44,8 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 25px;
 }
 
@@ -61,8 +61,8 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 20px;
 }
 
@@ -72,8 +72,8 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 20px;
 }
 
@@ -126,15 +126,29 @@ body {
   padding: 6px 36px;
 }
 
+.all-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
 .list-of-contacts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   gap: 200px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .list-of-contacts .contact-details {
@@ -143,11 +157,11 @@ body {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 6px;
 }
 
@@ -157,8 +171,8 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .list-of-contacts .contact-details .contact-info .contact-name {
@@ -172,8 +186,8 @@ body {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   gap: 8px;
 }
 
@@ -183,8 +197,8 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 55px;
   margin-top: 21px;
   padding: 27px 45px;
@@ -196,16 +210,16 @@ body {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   height: 40px;
   width: 476px;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contact-list .contact-list-header .contact-list-header-title > span {
@@ -223,10 +237,10 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   place-content: center center;
   border-radius: 4px;
   font-size: 14px;
@@ -235,7 +249,7 @@ body {
 
 .contact-list .contact-list-header .contact-list-header-button > span:hover {
   -webkit-box-shadow: 2px 2px 2px #8d8c8c;
-  box-shadow: 2px 2px 2px #8d8c8c;
+          box-shadow: 2px 2px 2px #8d8c8c;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
 }
@@ -246,16 +260,16 @@ body {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   height: 50px;
   width: 425px;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: 2px solid #0269c7;
   border-radius: 10px;
   position: relative;
@@ -275,7 +289,7 @@ body {
   top: 50%;
   left: 0.5%;
   -webkit-transform: translate(-0.5%, -50%);
-  transform: translate(-0.5%, -50%);
+          transform: translate(-0.5%, -50%);
 }
 
 .contact-list .contact-list-search > input:-ms-input-placeholder {
@@ -303,7 +317,7 @@ body {
   top: 50%;
   left: 0.5%;
   -webkit-transform: translate(-0.5%, -50%);
-  transform: translate(-0.5%, -50%);
+          transform: translate(-0.5%, -50%);
 }
 
 .contact-list .contact-list-search > input[type='text'] {
@@ -317,7 +331,7 @@ body {
   top: 20%;
   right: 2%;
   -webkit-transform: translate(-2%, -20%);
-  transform: translate(-2%, -20%);
+          transform: translate(-2%, -20%);
 }
 
 .contact-list .contact-list-users {
@@ -326,13 +340,13 @@ body {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   height: 57px;
   width: 512px;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .contact-list .contact-list-users .user-contact-details {
@@ -341,8 +355,8 @@ body {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   gap: 6px;
 }
 
@@ -352,8 +366,8 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 2px;
 }
 
@@ -368,8 +382,8 @@ body {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   gap: 8px;
 }
 
@@ -379,12 +393,12 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 398px;
   width: 584px;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   place-content: center center;
   gap: 15px;
 }
@@ -395,8 +409,8 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 2px;
 }
 
@@ -420,14 +434,14 @@ body {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 4px;
 }
 

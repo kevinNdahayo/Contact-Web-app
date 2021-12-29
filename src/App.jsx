@@ -18,6 +18,11 @@ function App() {
       name: 'Mr.beast',
       email: 'mrbeast@gmail.com',
     },
+    {
+      id: 2,
+      name: 'Mr.Kenny',
+      email: 'mrkenny@gmail.com',
+    },
   ]
   return (
     <div className="container">
